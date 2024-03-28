@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'am <span>Harika</span><br>Velaga Web Application developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about------------>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="">
+                </div>
+                <div class="about-col-2"></div>
+                <h1 class="sub-title">About me</h1> 
+                <p>Hello all this is harika velaga welcome to my portfolio website.I am a web application developer I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new things, the more , the better.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Python</span><br>Beginner Coding</li>
+                    <li><span>Web Development</span><br>Web Application Development</li>
+                    <li><span>C language</span><br>Beginner in coding</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Metreculation</span><br>Vijayarani English Meedium High School With Grades:10</li>
+                    <li><span>Higher Schooling</span><br>Sri Akshara Junior College with grades:8.1</li>
+                    <li><span>Graduation</span><br>Currently Pursing B-tech 2 year in branch CSE with specialization:Artificial Intelligence and Machine Learning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-------services------->
+   <!------ <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>hloo this is harika new web app designer, nice to meet u</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX</h2>
+                    <p>hloo this is harika new web app designer, nice to meet u</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>App design</h2>
+                    <p>hloo this is harika new web app designer, nice to meet u</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-------portfolio------->
+    <div id="Portfolio">
+        <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="work-list">
+        <div class="work">
+            <img src="C:\Users\HP\OneDrive\Desktop\portfolio\images\image-1.jpg">
+            <div class="layer">
+                <h3>Introduction to python</h3>
+
+            </div>
+        </div>
+        <div class="work">
+            <img src="C:\Users\HP\OneDrive\Desktop\portfolio\images\image-2.jpg">
+            <div class="layer">
+                <h3>Basics of python</h3>
+            </div>
+        </div>
+        <div class="work">
+            <img src="C:\Users\HP\OneDrive\Desktop\portfolio\images\image-3.jpg">
+            <div class="layer">
+                <h3>Intro to ML and DS</h3>
+            </div>
+        </div>
+        <div class="work">
+            <img src="C:\Users\HP\OneDrive\Desktop\portfolio\images\image-4.jpg">
+            <div class="layer">
+                <h3>Basics of HTML</h3>
+            </div>
+        </div>
+        <div class="work">
+            <img src="C:\Users\HP\OneDrive\Desktop\portfolio\images\image-5.jpg">
+            <div class="layer">
+                <h3>Intro to Blockchain</h3>
+            </div>
+        </div>
+        <div class="work">
+            <img src="C:\Users\HP\OneDrive\Desktop\portfolio\images\image-6.jpg">
+            <div class="layer">
+                <h3>Cretifacte in Hackthon</h3>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>harikavelaga9999@gmail.com</p>
+                <p><i class="fas fa-phone-square">8179266914</i></p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+        </script>
+</body>
+</html>
